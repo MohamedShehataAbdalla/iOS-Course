@@ -1,0 +1,11 @@
+/* 
+  InfoPlist.strings
+  AdhamApp
+
+  Created by odc on 05/04/2023.
+  
+*/
+
+
+"CFBundleName" = "Adham Show";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "Please Allow Camera";

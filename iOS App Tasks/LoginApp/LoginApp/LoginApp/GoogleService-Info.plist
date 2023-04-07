@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>224324804709-ugl860c8nr5n3n4qge06li11vp021734.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.224324804709-ugl860c8nr5n3n4qge06li11vp021734</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCHCz3N8IhY9ARcZG_zBzl7W1JlRB4ZrF0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>224324804709</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mohamedshehata.LoginApp</string>
+	<key>PROJECT_ID</key>
+	<string>osamaloginapp</string>
+	<key>STORAGE_BUCKET</key>
+	<string>osamaloginapp.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:224324804709:ios:55224f1b8e56996d6ce68c</string>
+</dict>
+</plist>

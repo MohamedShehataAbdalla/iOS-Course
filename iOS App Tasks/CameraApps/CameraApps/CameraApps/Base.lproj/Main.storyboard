@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CameraApps" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facebooke" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVi-CG-Gx7">
+                                <rect key="frame" x="107.66666666666669" y="96" width="178" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Youre Photo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Awt-4D-PnG">
+                                <rect key="frame" x="16" y="179" width="180" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPJ-mZ-eld">
+                                <rect key="frame" x="312" y="176" width="65" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="camera" catalog="system"/>
+                                <connections>
+                                    <action selector="btnBrowesImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P54-bJ-sjV"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gfz-G6-OMH">
+                                <rect key="frame" x="16" y="222" width="361" height="580"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KVi-CG-Gx7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="8Ob-V7-czm"/>
+                            <constraint firstItem="Awt-4D-PnG" firstAttribute="top" secondItem="KVi-CG-Gx7" secondAttribute="bottom" constant="41" id="CPD-TK-Dnw"/>
+                            <constraint firstItem="Awt-4D-PnG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Vwt-y8-pwT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OPJ-mZ-eld" secondAttribute="trailing" constant="16" id="eB1-MX-eW0"/>
+                            <constraint firstItem="Gfz-G6-OMH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="eFl-pU-McH"/>
+                            <constraint firstItem="OPJ-mZ-eld" firstAttribute="top" secondItem="KVi-CG-Gx7" secondAttribute="bottom" constant="38" id="fJA-gE-EQd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gfz-G6-OMH" secondAttribute="trailing" constant="16" id="gQC-Dn-WbQ"/>
+                            <constraint firstItem="Gfz-G6-OMH" firstAttribute="top" secondItem="Awt-4D-PnG" secondAttribute="bottom" constant="16" id="ncV-NE-INc"/>
+                            <constraint firstItem="OPJ-mZ-eld" firstAttribute="leading" secondItem="Awt-4D-PnG" secondAttribute="trailing" constant="116" id="oc3-ZA-R3D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gfz-G6-OMH" secondAttribute="bottom" constant="16" id="orX-3P-ccx"/>
+                            <constraint firstItem="KVi-CG-Gx7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r9g-qM-jn1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imagePost" destination="Gfz-G6-OMH" id="mwr-if-4x4"/>
+                        <outlet property="lblmsg" destination="Awt-4D-PnG" id="TdD-zO-mDm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera" catalog="system" width="128" height="93"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

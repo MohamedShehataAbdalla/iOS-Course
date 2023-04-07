@@ -1,0 +1,21 @@
+
+/* Class = "UIButton"; configuration.title = "Change Language"; ObjectID = "240-5g-sEG"; */
+"240-5g-sEG.configuration.title" = "Change Language";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "240-5g-sEG"; */
+"240-5g-sEG.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Hello"; ObjectID = "2F0-ou-P66"; */
+"2F0-ou-P66.text" = "Hello";
+
+/* Class = "UIButton"; configuration.title = "Show Alert"; ObjectID = "dGE-BU-Dx1"; */
+"dGE-BU-Dx1.configuration.title" = "Show Alert";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "dGE-BU-Dx1"; */
+"dGE-BU-Dx1.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Show Action Sheet"; ObjectID = "uWj-Ov-veW"; */
+"uWj-Ov-veW.configuration.title" = "Show Action Sheet";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "uWj-Ov-veW"; */
+"uWj-Ov-veW.normalTitle" = "Button";

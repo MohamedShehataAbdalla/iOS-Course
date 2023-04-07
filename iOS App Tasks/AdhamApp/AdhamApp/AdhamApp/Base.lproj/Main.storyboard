@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vXe-If-Zxc">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoKufiArabic-VariableFont_wght.ttf">
+            <string>NotoKufiArabic-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Looding View Controller-->
+        <scene sceneID="cbF-xd-Pc9">
+            <objects>
+                <viewController id="vXe-If-Zxc" customClass="LoodingViewController" customModule="AdhamApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r4q-LV-pfM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Asr-ic-i6s">
+                                <rect key="frame" x="76" y="362" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cdO-jr-GFN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Asr-ic-i6s" firstAttribute="centerY" secondItem="r4q-LV-pfM" secondAttribute="centerY" id="Kxy-aT-lxx"/>
+                            <constraint firstItem="Asr-ic-i6s" firstAttribute="centerX" secondItem="r4q-LV-pfM" secondAttribute="centerX" id="lfg-gd-2wE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loadingview" destination="Asr-ic-i6s" id="B7f-vk-oYr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4HP-tb-Ssw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-913" y="-17"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdhamApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="240-5g-sEG">
+                                <rect key="frame" x="52" y="522" width="289" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Button"/>
+                                <connections>
+                                    <action selector="btnChangeLang:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uhB-NF-xXp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2F0-ou-P66">
+                                <rect key="frame" x="16" y="393" width="361" height="67"/>
+                                <fontDescription key="fontDescription" name="NotoKufiArabic-Regular" family="Noto Kufi Arabic" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="myColor"/>
+                        <constraints>
+                            <constraint firstItem="240-5g-sEG" firstAttribute="top" secondItem="2F0-ou-P66" secondAttribute="bottom" constant="62" id="1te-QO-BJk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="240-5g-sEG" secondAttribute="trailing" constant="52" id="3fu-N8-aZ7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2F0-ou-P66" secondAttribute="trailing" constant="16" id="DNB-Jl-rXx"/>
+                            <constraint firstItem="240-5g-sEG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="Pzl-Wi-Xsw"/>
+                            <constraint firstItem="2F0-ou-P66" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Uk9-T0-naB"/>
+                            <constraint firstItem="2F0-ou-P66" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="334" id="h69-40-1hw"/>
+                            <constraint firstItem="2F0-ou-P66" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hZk-Eh-6LZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnLang" destination="240-5g-sEG" id="Jbl-Gr-cnF"/>
+                        <outlet property="lblWelcome" destination="2F0-ou-P66" id="G5Z-KR-zDw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-95.419847328244273" y="-27.464788732394368"/>
+        </scene>
+        <!--Alert View Controller-->
+        <scene sceneID="i2x-mt-nux">
+            <objects>
+                <viewController id="1gv-dQ-n3P" customClass="AlertViewController" customModule="AdhamApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="igz-bg-vGs">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGE-BU-Dx1">
+                                <rect key="frame" x="104" y="265" width="184" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Show Alert"/>
+                                <connections>
+                                    <action selector="btnShowAlert:" destination="1gv-dQ-n3P" eventType="touchUpInside" id="n0N-Tw-Lz7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWj-Ov-veW">
+                                <rect key="frame" x="104" y="409" width="184" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Show Action Sheet"/>
+                                <connections>
+                                    <action selector="btnShowActionSheet:" destination="1gv-dQ-n3P" eventType="touchUpInside" id="nOc-8m-FcC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uUq-Qu-gbm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Edx-XY-fFs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="884.73282442748086" y="-26.760563380281692"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="myColor">
+            <color red="0.83700001239776611" green="0.83700001239776611" blue="0.83700001239776611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
